@@ -12,7 +12,12 @@
     <!-- For Home slider -->
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
-     <!-- For Home slider -->
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+    <!-- Include Flowbite JS -->
+<!-- <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script> -->
+
+    <!-- For Home slider -->
     <link href="./output.css" rel="stylesheet">
     <title>Home</title>
 </head>
@@ -39,7 +44,7 @@
                             <div class="line-menu half start"></div>
                             <div class="line-menu"></div>
                             <div class="line-menu half end"></div>
-                          </div>
+                        </div>
                     </div>
 
                     <!-- Navbar Links -->
@@ -48,7 +53,7 @@
                         <a href="#" class="text-gray-800 hover:text-primary duration-300 nav-link">About</a>
 
                         <!-- Dropdown for Services -->
-                        <div id="servicesdiv" class="relative group">
+                        <!-- <div id="servicesdiv" class="relative group">
                             <button class="text-gray-800 hover:text-primary duration-300 focus:outline-none">
                                 Services
                                 <i class="fas fa-chevron-down text-sm"></i>
@@ -73,7 +78,102 @@
                                     class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Additional
                                     Services</a>
                             </div>
+                        </div> -->
+                        <!-- SEVRICES -->
+                        <a id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" data-dropdown-trigger="hover"
+                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
+                            type="button">Services
+                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown menu -->
+                        <div id="multi-dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                            <ul class="p y-2 text-sm bg-navbg rounded-lg"
+                                aria-labelledby="multiLevelDropdownButton">
+                                
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Design Services</a>
+                                </li>
+                                <li>
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-trigger="hover"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">System Studies<svg
+                                            class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 9 4-4-4-4" />
+                                        </svg></button>
+                                    <div id="doubleDropdown"
+                                        class="z-10 hidden bg-navbg divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                                        <ul class="p y-2 text-sm text-g ray-700 d ark:text-gray-200"
+                                            aria-labelledby="doubleDropdownButton">
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Relay Testing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">My
+                                                    FAT (Factory Acceptance Test)</a>
+                                            </li>
+                                           
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
+
+                        <!-- Dropdown menu1 -->
+                        <!-- SOLUTIONS -->
+                        <a id="multiLevelDropdownButton1" data-dropdown-toggle="multi-dropdown1" data-dropdown-trigger="hover"
+                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
+                            type="button">Solutions
+                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </a>
+
+                        <div id="multi-dropdown1"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                            <ul class="p y-2 text-sm bg-navbg rounded-lg"
+                                aria-labelledby="multiLevelDropdownButton">
+                                
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">EMS</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">
+                                        BMS</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">SAS</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">
+                                        Solar System</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">EV Solutions</a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+
+
 
                         <!-- Dropdown for Projects -->
                         <div id="project" class="relative group">
@@ -104,32 +204,128 @@
                             </div>
                         </div>
 
-                        <a href="#" class="text-gray-800 hover:text-primary duration-300">Solutions</a>
+                        <!-- <a href="#" class="text-gray-800 hover:text-primary duration-300">Solutions</a> -->
                         <a href="#" class="text-gray-800 hover:text-primary duration-300">Portfolio</a>
 
                         <!-- Dropdown for Company -->
 
-                        <div  class="relative group">
-                            <button class="text-gray-800 hover:text-primary duration-300 focus:outline-none">
-                                Brands
-                                <i class="fas fa-chevron-down text-sm"></i>
-                            </button>
-                            <div id="deskcompany"
-                                class="absolute left-0 pt-2 w-48 bg-navbg shadow-lg rounded-md hidden group-hover:block lg:group-hover:block">
-                                <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Company
-                                    1</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Company
-                                    2</a>
-                                <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Company
-                                    3</a>
-
-
-                            </div>
-                        </div>
+                                               <!-- SEVRICES -->
+                                               <a id="multiLevelDropdownButton2" data-dropdown-toggle="multi-dropdown2" data-dropdown-trigger="hover"
+                                               class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
+                                               type="button">Brands
+                                                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                                   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                       stroke-width="2" d="m1 1 4 4 4-4" />
+                                               </svg>
+                                           </a>
+                   
+                                           <!-- Dropdown menu -->
+                                           <div id="multi-dropdown2"
+                                               class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                                               <ul class="p y-2 text-sm bg-navbg rounded-lg"
+                                                   aria-labelledby="multiLevelDropdownButton">
+                                                   
+                                                   <li>
+                                                       <a href="#"
+                                                           class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Design Services</a>
+                                                   </li>
+                                                   <li>
+                                                       <button id="doubleDropdownButton2" data-dropdown-toggle="doubleDropdown2" data-dropdown-trigger="hover"
+                                                           data-dropdown-placement="right-start" type="button"
+                                                           class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">System Studies<svg
+                                                               class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
+                                                               xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                                               <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                                   stroke-width="2" d="m1 9 4-4-4-4" />
+                                                           </svg></button>
+                                                       <div id="doubleDropdown2"
+                                                           class="z-10 hidden bg-navbg divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                                                           <ul class="p y-2 text-sm text-g ray-700 d ark:text-gray-200"
+                                                               aria-labelledby="doubleDropdownButton">
+                                                               <li>
+                                                                   <a href="#"
+                                                                       class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Relay Testing</a>
+                                                               </li>
+                                                               <li>
+                                                                   <a href="#"
+                                                                       class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">My
+                                                                       FAT (Factory Acceptance Test)</a>
+                                                               </li>
+                                                              
+                                                           </ul>
+                                                       </div>
+                                                   </li>
+                                               </ul>
+                                           </div>
                         <a href="#" class="text-gray-800 hover:text-primary duration-300">Contact Us</a>
+
+
+ 
+                        <!-- <a id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" data-dropdown-trigger="hover"
+                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
+                            type="button">Dropdown button
+                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </a> -->
+
+                        <!-- Dropdown menu -->
+                        <!-- <div id="multi-dropdown"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                            <ul class="p y-2 text-sm bg-navbg rounded-lg"
+                                aria-labelledby="multiLevelDropdownButton">
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Dashboard</a>
+                                </li>
+                                <li>
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-trigger="hover"
+                                        data-dropdown-placement="right-start" type="button"
+                                        class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Dropdown<svg
+                                            class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m1 9 4-4-4-4" />
+                                        </svg></button>
+                                    <div id="doubleDropdown"
+                                        class="z-10 hidden bg-navbg divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                                        <ul class="p y-2 text-sm text-g ray-700 d ark:text-gray-200"
+                                            aria-labelledby="doubleDropdownButton">
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Overview</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">My
+                                                    downloads</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Billing</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Rewards</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Earnings</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Sign
+                                        out</a>
+                                </li>
+                            </ul>
+                        </div> -->
+
 
                     </div>
 
@@ -236,8 +432,8 @@
         </header>
         <!-- HERO -->
 
-       <div class="">
-        <div x-data="{            
+        <div class="">
+            <div x-data="{            
             // Sets the time between each slides in milliseconds
             autoplayIntervalTime: 4000,
             slides: [                
@@ -311,33 +507,45 @@
                 this.autoplay()
             },    
         }" x-init="autoplay" class="relative w-full overflow-hidden">
-           
-            <!-- slides -->
-            <!-- Change min-h-[50svh] to your preferred height size -->
-            <div class="relative min-h-[90svh] w-full">
-                <template x-for="(slide, index) in slides">
-                    <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0" x-transition.opacity.duration.1000ms>
-                        
-                        <!-- Title and description -->
-                        <div class="font-rubik text-white lg:px-16 lg:py-14 absolute inset-0 z-10 flex flex-col items-center justify-end sm:justify-center lg:justify-center gap-2 bg-linear-to-t from-surface-dark/85 to-transparent px-16 py-12 text-center">
-                            <h3 class="w-full lg:w-[80%] text-balance text-[34px] lg:text-[40px] font-bold uppercase text-on-surface-dark-strong" x-text="slide.title" x-bind:aria-describedby="'slide' + (index + 1) + 'Description'"></h3>
-                            <p class="lg:w-1/2 w-full text-pretty text-lg text-on-surface-dark" x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'"></p>
+
+                <!-- slides -->
+                <!-- Change min-h-[50svh] to your preferred height size -->
+                <div class="relative min-h-[90svh] w-full">
+                    <template x-for="(slide, index) in slides">
+                        <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0"
+                            x-transition.opacity.duration.1000ms>
+
+                            <!-- Title and description -->
+                            <div
+                                class="font-rubik text-white lg:px-16 lg:py-14 absolute inset-0 z-10 flex flex-col items-center justify-end sm:justify-center lg:justify-center gap-2 bg-linear-to-t from-surface-dark/85 to-transparent px-16 py-12 text-center">
+                                <h3 class="w-full lg:w-[80%] text-balance text-[34px] lg:text-[40px] font-bold uppercase text-on-surface-dark-strong"
+                                    x-text="slide.title"
+                                    x-bind:aria-describedby="'slide' + (index + 1) + 'Description'">
+                                    </h2>
+                                    <p class="lg:w-1/2 w-full text-pretty text-lg text-on-surface-dark"
+                                        x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'">
+                                    </p>
+                            </div>
+
+                            <img class="absolute w-full h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark"
+                                x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt" />
                         </div>
-        
-                        <img class="absolute w-full h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark" x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt" />
-                    </div>
-                </template>
-            </div>
-            
-            <!-- indicators -->
-            <div class="absolute rounded-sm bottom-3 md:bottom-5 left-1/2 z- 20 flex -translate-x-1/2 gap-4 md:gap-3 px-1.5 py-1 md:px-2" role="group" aria-label="slides" >
-                <template x-for="(slide, index) in slides">
-                    <button class="size-2 rounded-full transition" x-on:click="(currentSlideIndex = index + 1), setAutoplayInterval(autoplayIntervalTime)" x-bind:class="[currentSlideIndex === index + 1 ? 'bg-neutral-300' : 'bg-neutral-300/50']" x-bind:aria-label="'slide ' + (index + 1)"></button>
-                </template>
+                    </template>
+                </div>
+
+                <!-- indicators -->
+                <div class="absolute rounded-sm bottom-3 md:bottom-5 left-1/2 z- 20 flex -translate-x-1/2 gap-4 md:gap-3 px-1.5 py-1 md:px-2"
+                    role="group" aria-label="slides">
+                    <template x-for="(slide, index) in slides">
+                        <button class="size-2 rounded-full transition"
+                            x-on:click="(currentSlideIndex = index + 1), setAutoplayInterval(autoplayIntervalTime)"
+                            x-bind:class="[currentSlideIndex === index + 1 ? 'bg-neutral-300' : 'bg-neutral-300/50']"
+                            x-bind:aria-label="'slide ' + (index + 1)"></button>
+                    </template>
+                </div>
             </div>
         </div>
-       </div>
-       
+
 
         <!-- section4 -->
         <section>
@@ -437,15 +645,18 @@
                         <img class="mb-5 w-11" src="assets/images/home/real-estate-icon.svg">
                         <h5 class="text-4xl font-semibold text-secondary font-teko mb-5 leading-tight">Real Estate</h5>
                         <p class="text-base leading-5 text-secondary">
-                            Innovative MEP solutions to elevate real estate projects, focusing on sustainability and modern
+                            Innovative MEP solutions to elevate real estate projects, focusing on sustainability and
+                            modern
                             design to meet the dynamic needs of the property market.
                         </p>
                     </div>
                     <div class="shadow-lg p-6 bg-navbg rounded-md">
                         <img class="mb-5 w-11" src="assets/images/home/educational-icon.svg">
-                        <h5 class="text-4xl font-semibold text-secondary font-teko mb-5 leading-tight">Education Sector</h5>
+                        <h5 class="text-4xl font-semibold text-secondary font-teko mb-5 leading-tight">Education Sector
+                        </h5>
                         <p class="text-base leading-5 text-secondary">
-                            Empower educational institutions with MEP solutions designed for the modern learning environment. We
+                            Empower educational institutions with MEP solutions designed for the modern learning
+                            environment. We
                             provide sustainable, efficient systems to support schools and universities, creating optimal
                             conditions for students and staff.
                         </p>
@@ -454,7 +665,8 @@
                         <img class="mb-5 w-11" src="assets/images/home/health-care-icon.svg">
                         <h5 class="text-4xl font-semibold text-secondary font-teko mb-5 leading-tight">Health Care</h5>
                         <p class="text-base leading-5 text-secondary">
-                            Empower educational institutions with MEP solutions designed for the modern learning environment. We
+                            Empower educational institutions with MEP solutions designed for the modern learning
+                            environment. We
                             provide sustainable, efficient systems to support schools and universities, creating optimal
                             conditions for students and staff.
                         </p>
@@ -468,13 +680,13 @@
                             innovative services.
                         </p>
                     </div>
-        
+
                 </div>
 
             </div>
         </section>
 
-      
+
         <!-- section6 -->
         <section>
             <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-16 lg:py-32">
@@ -713,7 +925,7 @@
             </div>
         </section>
 
-       
+
 
         <!-- footer -->
         <footer class="bg-secondary text-white">
@@ -838,19 +1050,43 @@
                             class="font-rubik text-base hover:text-primary duration-300 hover:underline">Our Vision</a> -->
                     </div>
                     <div>
-                        <p class="font-rubik text-base tracking-wide">All Rights Reserved © <span class="font-semibold text-primary">AINYAS</span></p>
+                        <p class="font-rubik text-base tracking-wide">All Rights Reserved © <span
+                                class="font-semibold text-primary">AINYAS</span></p>
                     </div>
                 </div>
             </div>
         </footer>
 
     </main>
-    
+
     <script src="assets/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="assets/js/home.js"></script>
 
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script> -->
+     <script src="/src/assets/js/flowbite/flowbite.min.js"></script>
+    
+     <!-- <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          // Get all dropdown buttons with `data-dropdown-toggle`
+          const dropdownToggles = document.querySelectorAll('[data-dropdown-toggle]');
+      
+          dropdownToggles.forEach((toggleBtn) => {
+            const dropdownId = toggleBtn.getAttribute('data-dropdown-toggle');
+            const dropdownEl = document.getElementById(dropdownId);
+      
+            if (dropdownEl) {
+              new Dropdown(dropdownEl, toggleBtn, {
+                placement: 'bottom',
+                triggerType: toggleBtn.getAttribute('data-dropdown-trigger') || 'click'
+              });
+            }
+          });
+        });
+      </script> -->
+      
 
 </body>
 
