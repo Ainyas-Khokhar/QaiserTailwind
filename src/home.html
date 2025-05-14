@@ -15,7 +15,10 @@
 
     <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
     <!-- Include Flowbite JS -->
-<!-- <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script> -->
+    <!-- <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script> -->
+
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+
 
     <!-- For Home slider -->
     <link href="./output.css" rel="stylesheet">
@@ -26,7 +29,7 @@
 <body>
     <main>
         <!-- HEADER -->
-        <header class="sticky top-0 z-20 w-full font-rubik font-se mibold">
+        <header class="sticky top-0 z-20 w-full font-rubik">
             <!-- Navbar Section -->
             <nav class="bg-navbg  ">
                 <div class="container mx-auto px-4 lg:px-7 xl:px-10  py-4 flex justify-between items-center ">
@@ -48,13 +51,17 @@
                     </div>
 
                     <!-- Navbar Links -->
-                    <div id="desktop-menu" class="hidden  lg:flex space-x-4 xl:space-x-7">
-                        <a href="#" class="text-gray-800 hover:text-primary duration-300 nav-link">Home</a>
-                        <a href="#" class="text-gray-800 hover:text-primary duration-300 nav-link">About</a>
+                    <div id="desktop-menu" class="hidden text-sm lg:flex space-x-4 xl:space-x-7">
+
+                        <a href="#" class="text-gray-800  duration-300 nav-link"></a>
+                        <a href="#" class="text-gray-800 hover:text-red-600 duration-300 nav-link font-[460]">Home</a>
+
+
+                        <a href="#" class="text-gray-800 hover:text-red-600 duration-300 nav-link font-[460]">About</a>
 
                         <!-- Dropdown for Services -->
                         <!-- <div id="servicesdiv" class="relative group">
-                            <button class="text-gray-800 hover:text-primary duration-300 focus:outline-none">
+                            <button class="text-gray-800 hover:text-red-600 duration-300 focus:outline-none">
                                 Services
                                 <i class="fas fa-chevron-down text-sm"></i>
                             </button>
@@ -62,29 +69,30 @@
                             <div id="deskservices"
                                 class="absolute left-0 pt-2 w-48 bg-navbg shadow-lg rounded-md hidden group-hover:block lg:group-hover:block">
                                 <a href=" #"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">
                                     Electrical
                                     Services</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Mechanical
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Mechanical
                                     Services</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Plumbing
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Plumbing
                                     Services</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">HVAC
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">HVAC
                                     Services</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Additional
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Additional
                                     Services</a>
                             </div>
                         </div> -->
                         <!-- SEVRICES -->
-                        <a id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" data-dropdown-trigger="hover"
-                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
+                        <a id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown"
+                            data-dropdown-trigger="hover"
+                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center hover:text-red-600 font-[460]"
                             type="button">Services
-                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg>
@@ -93,18 +101,19 @@
                         <!-- Dropdown menu -->
                         <div id="multi-dropdown"
                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
-                            <ul class="p y-2 text-sm bg-navbg rounded-lg"
-                                aria-labelledby="multiLevelDropdownButton">
-                                
+                            <ul class="p y-2 text-sm bg-navbg rounded-lg" aria-labelledby="multiLevelDropdownButton">
+
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Design Services</a>
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Design
+                                        Services</a>
                                 </li>
                                 <li>
-                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-trigger="hover"
-                                        data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">System Studies<svg
-                                            class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
+                                    <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown"
+                                        data-dropdown-trigger="hover" data-dropdown-placement="right-start"
+                                        type="button"
+                                        class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">System
+                                        Studies<svg class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                                 stroke-width="2" d="m1 9 4-4-4-4" />
@@ -115,14 +124,15 @@
                                             aria-labelledby="doubleDropdownButton">
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Relay Testing</a>
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Relay
+                                                    Testing</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">My
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">My
                                                     FAT (Factory Acceptance Test)</a>
                                             </li>
-                                           
+
                                         </ul>
                                     </div>
                                 </li>
@@ -131,11 +141,12 @@
 
                         <!-- Dropdown menu1 -->
                         <!-- SOLUTIONS -->
-                        <a id="multiLevelDropdownButton1" data-dropdown-toggle="multi-dropdown1" data-dropdown-trigger="hover"
-                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
+                        <a id="multiLevelDropdownButton1" data-dropdown-toggle="multi-dropdown1"
+                            data-dropdown-trigger="hover"
+                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center hover:text-red-600 font-[460]"
                             type="button">Solutions
-                             <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
-                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
                                 <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
                                     stroke-width="2" d="m1 1 4 4 4-4" />
                             </svg>
@@ -143,30 +154,30 @@
 
                         <div id="multi-dropdown1"
                             class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
-                            <ul class="p y-2 text-sm bg-navbg rounded-lg"
-                                aria-labelledby="multiLevelDropdownButton">
-                                
+                            <ul class="p y-2 text-sm bg-navbg rounded-lg" aria-labelledby="multiLevelDropdownButton">
+
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">EMS</a>
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">EMS</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">
                                         BMS</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">SAS</a>
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">SAS</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">
                                         Solar System</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">EV Solutions</a>
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">EV
+                                        Solutions</a>
                                 </li>
                             </ul>
                         </div>
@@ -177,63 +188,74 @@
 
                         <!-- Dropdown for Projects -->
                         <div id="project" class="relative group">
-                            <button class="text-gray-800 hover:text-primary duration-300 focus:outline-none">
+                            <button class="text-gray-800 hover:text-red-600 font-[460] duration-300 focus:outline-none">
                                 Products
                                 <i class="fas fa-chevron-down text-sm"></i>
                             </button>
                             <div id="deskproject"
                                 class="absolute left-0 pt-2 w-48 bg-navbg shadow-lg rounded-md hidden group-hover:block lg:group-hover:block">
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Commercial</a>
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Commercial</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Educational</a>
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Educational</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Hospitality</a>
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Hospitality</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Industrial</a>
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Industrial</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Leisure
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Leisure
                                     Facilities</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Marquees</a>
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Marquees</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Infrastructure</a>
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Infrastructure</a>
                                 <a href="#"
-                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Health
+                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Health
                                     Care</a>
                             </div>
                         </div>
 
-                        <!-- <a href="#" class="text-gray-800 hover:text-primary duration-300">Solutions</a> -->
-                        <a href="#" class="text-gray-800 hover:text-primary duration-300">Portfolio</a>
+                        <!-- <a href="#" class="text-gray-800 hover:text-red-600 duration-300">Solutions</a> -->
 
                         <!-- Dropdown for Company -->
 
-                                               <!-- SEVRICES -->
-                                               <a id="multiLevelDropdownButton2" data-dropdown-toggle="multi-dropdown2" data-dropdown-trigger="hover"
-                                               class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
-                                               type="button">Brands
-                                                <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true"
-                                                   xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
-                                                   <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                                       stroke-width="2" d="m1 1 4 4 4-4" />
-                                               </svg>
-                                           </a>
-                   
-                                           <!-- Dropdown menu -->
-                                           <div id="multi-dropdown2"
-                                               class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
-                                               <ul class="p y-2 text-sm bg-navbg rounded-lg"
-                                                   aria-labelledby="multiLevelDropdownButton">
-                                                   
-                                                   <li>
-                                                       <a href="#"
-                                                           class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Design Services</a>
-                                                   </li>
-                                                   <li>
+                        <!-- SEVRICES -->
+                        <a id="multiLevelDropdownButton2" data-dropdown-toggle="multi-dropdown2"
+                            data-dropdown-trigger="hover"
+                            class=" font-medi um rounded-lg text-sm text-center inline-flex items-center hover:text-red-600 font-[460]"
+                            type="button">Brands
+                            <svg class="w-2.5 h-2.5 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                fill="none" viewBox="0 0 10 6">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m1 1 4 4 4-4" />
+                            </svg>
+                        </a>
+
+                        <!-- Dropdown menu -->
+                        <div id="multi-dropdown2"
+                            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow-sm w-44 da rk:bg-gray-700">
+                            <ul class="p y-2 text-sm bg-navbg rounded-lg" aria-labelledby="multiLevelDropdownButton">
+
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Shneider</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Pheonix</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Seimens</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">ABB</a>
+                                </li>
+                                <!-- <li>
                                                        <button id="doubleDropdownButton2" data-dropdown-toggle="doubleDropdown2" data-dropdown-trigger="hover"
                                                            data-dropdown-placement="right-start" type="button"
-                                                           class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">System Studies<svg
+                                                           class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">System Studies<svg
                                                                class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
                                                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -245,23 +267,30 @@
                                                                aria-labelledby="doubleDropdownButton">
                                                                <li>
                                                                    <a href="#"
-                                                                       class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Relay Testing</a>
+                                                                       class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Relay Testing</a>
                                                                </li>
                                                                <li>
                                                                    <a href="#"
-                                                                       class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">My
+                                                                       class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">My
                                                                        FAT (Factory Acceptance Test)</a>
                                                                </li>
                                                               
                                                            </ul>
                                                        </div>
-                                                   </li>
-                                               </ul>
-                                           </div>
-                        <a href="#" class="text-gray-800 hover:text-primary duration-300">Contact Us</a>
+                                                   </li> -->
+                            </ul>
+                        </div>
+
+                        <a href="#" class="text-gray-800 hover:text-red-600  font-[460] duration-300">Portfolio</a>
+                        <!-- hidden lg:inline-block bg-primary duration-300 text-white px-4 xl:px-6 py-2 rounded-md hover:bg-secondary -->
 
 
- 
+                        <!-- <button class="hidden lg:inline-block bg-red-600 p-2" type="button">
+                         <a href="#" class="text-white hover:text-red-600 duration-300">Contact Us</a>
+                       </button> -->
+
+
+
                         <!-- <a id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" data-dropdown-trigger="hover"
                             class=" font-medi um rounded-lg text-sm text-center inline-flex items-center "
                             type="button">Dropdown button
@@ -279,12 +308,12 @@
                                 aria-labelledby="multiLevelDropdownButton">
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Dashboard</a>
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Dashboard</a>
                                 </li>
                                 <li>
                                     <button id="doubleDropdownButton" data-dropdown-toggle="doubleDropdown" data-dropdown-trigger="hover"
                                         data-dropdown-placement="right-start" type="button"
-                                        class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Dropdown<svg
+                                        class="flex items-center justify-between w-full px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Dropdown<svg
                                             class="w-2.5 h-2.5 ms-3 rtl:rotate-180" aria-hidden="true"
                                             xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
                                             <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
@@ -296,31 +325,31 @@
                                             aria-labelledby="doubleDropdownButton">
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Overview</a>
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Overview</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">My
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">My
                                                     downloads</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Billing</a>
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Billing</a>
                                             </li>
                                             <li>
                                                 <a href="#"
-                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Rewards</a>
+                                                    class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Rewards</a>
                                             </li>
                                         </ul>
                                     </div>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Earnings</a>
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Earnings</a>
                                 </li>
                                 <li>
                                     <a href="#"
-                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Sign
+                                        class="block px-4 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Sign
                                         out</a>
                                 </li>
                             </ul>
@@ -330,100 +359,100 @@
                     </div>
 
                     <!-- Contact Us Button -->
-                    <!-- <a href="#inquire"
-                        class="hidden lg:inline-block bg-primary duration-300 text-white px-4 xl:px-6 py-2 rounded-md hover:bg-secondary">
+                    <a href="#inquire"
+                        class="hidden lg:inline-block bg-primary duration-300 text-white text-sm px-2 xl:px-6 py-2 rounded-md hover:bg-red-500">
                         Contact Us
-                    </a> -->
+                    </a>
                 </div>
 
                 <!-- Mobile Menu -->
                 <div id="mobile-menu" class="lg:hidden px-3 bg-navbg hidden container mx-auto  py-4 ">
                     <a href="#"
-                        class="block px-4 py-2 hover:text-primary duration-300 font-[460] hover:bg-gray-200 nav-link">Home</a>
+                        class="block px-4 py-2 hover:text-red-600 duration-300 font-[460] hover:bg-gray-200 nav-link">Home</a>
                     <a href="#"
-                        class="block px-4 py-2 hover:text-primary duration-300 font-[460] hover:bg-gray-200 nav-link">About</a>
+                        class="block px-4 py-2 hover:text-red-600 duration-300 font-[460] hover:bg-gray-200 nav-link">About</a>
 
                     <!-- Mobile Dropdown for Services -->
                     <div class="block relative">
                         <button id="services"
-                            class="block text-gray-800 w-full hover:text-primary duration-300 text-left px-4 py-2 font-[460] hover:bg-gray-200">
+                            class="block text-gray-800 w-full hover:text-red-600 duration-300 text-left px-4 py-2 font-[460] hover:bg-gray-200">
                             Services
                             <i class="fas fa-chevron-down text-sm"></i>
                         </button>
                         <div id="services-dropdown" class="hidden">
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Commercial</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Commercial</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Educational</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Educational</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Hospitality</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Hospitality</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Industrial</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Industrial</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Leisure
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Leisure
                                 Facilities</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Marquees</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Marquees</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Infrastructure</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Infrastructure</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Health
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Health
                                 Care</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary nav-link">Fire
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600 nav-link">Fire
                                 & Life Safety Design</a>
                         </div>
                     </div>
                     <div class="block relative">
                         <button id="projects"
-                            class="block text-gray-800 w-full text-left px-4 py-2 hover:text-primary duration-300 font-[460] hover:bg-gray-200">
+                            class="block text-gray-800 w-full text-left px-4 py-2 hover:text-red-600 duration-300 font-[460] hover:bg-gray-200">
                             Projects
                             <i class="fas fa-chevron-down text-sm"></i>
                         </button>
                         <div id="projects-dropdown" class="hidden">
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Commercial</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Commercial</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Educational</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Educational</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Hospitality</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Hospitality</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Industrial</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Industrial</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Leisure
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Leisure
                                 Facilities</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Marquees</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Marquees</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Infrastructure</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Infrastructure</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Health
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Health
                                 Care</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Fire
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Fire
                                 & Life Safety Design</a>
                         </div>
                     </div>
 
                     <!-- Other mobile links here -->
                     <a href="#"
-                        class="block px-4 py-2 hover:text-primary duration-300 font-[460] hover:bg-gray-200">Solutions</a>
+                        class="block px-4 py-2 hover:text-red-600 duration-300 font-[460] hover:bg-gray-200">Solutions</a>
                     <a href="#"
-                        class="block px-4 py-2 hover:text-primary duration-300 font-[460] hover:bg-gray-200">Portfolio</a>
+                        class="block px-4 py-2 hover:text-red-600 duration-300 font-[460] hover:bg-gray-200">Portfolio</a>
                     <!-- company -->
                     <div class="block relative">
                         <button id="company"
-                            class="block text-gray-800 w-full text-left px-4 py-2 hover:text-primary duration-300 font-[460] hover:bg-gray-200">
+                            class="block text-gray-800 w-full text-left px-4 py-2 hover:text-red-600 duration-300 font-[460] hover:bg-gray-200">
                             Brands
                             <i class="fas fa-chevron-down text-sm"></i>
                         </button>
                         <div id="company-dropdown" class="hidden">
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Company1</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Company1</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Company2</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Company2</a>
                             <a href="#"
-                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-primary">Company3</a>
+                                class="block pl-6 py-2 text-gray-800 hover:bg-gray-200 duration-300 hover:text-red-600">Company3</a>
                         </div>
                     </div>
 
@@ -518,7 +547,7 @@
                             <!-- Title and description -->
                             <div
                                 class="font-rubik text-white lg:px-16 lg:py-14 absolute inset-0 z-10 flex flex-col items-center justify-end sm:justify-center lg:justify-center gap-2 bg-linear-to-t from-surface-dark/85 to-transparent px-16 py-12 text-center">
-                                <h3 class="w-full lg:w-[80%] text-balance text-[34px] lg:text-[40px] font-bold uppercase text-on-surface-dark-strong"
+                                <h3 class="w-full lg:w-[80%] text-balance text-4xl font-bold uppercase text-on-surface-dark-strong"
                                     x-text="slide.title"
                                     x-bind:aria-describedby="'slide' + (index + 1) + 'Description'">
                                     </h2>
@@ -554,7 +583,7 @@
                 <div class=" mb-12">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-teko">Expertise Across Sectors</h2>
                     <p class="text-secondary text-base mb-12 font-rubik max-w-6xl mt-4">
-                        At MEPCE, we extend our expertise across various pivotal sectors including real estate,
+                        We extend our expertise across various pivotal sectors including real estate,
                         healthcare, education, and data centers. Our dedicated team crafts solutions that cater to the
                         unique demands of each sector, fostering innovation and excellence at every step. Trust us to be
                         your reliable partner, propelling growth and success in your industry.
@@ -639,13 +668,13 @@
 
                 </div>
                 <!-- old cards -->
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 mt-8">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-8">
 
                     <div class="shadow-lg p-6 bg-navbg rounded-md">
                         <img class="mb-5 w-11" src="assets/images/home/real-estate-icon.svg">
                         <h5 class="text-4xl font-semibold text-secondary font-teko mb-5 leading-tight">Real Estate</h5>
                         <p class="text-base leading-5 text-secondary">
-                            Innovative MEP solutions to elevate real estate projects, focusing on sustainability and
+                            Innovative solutions to elevate real estate projects, focusing on sustainability and
                             modern
                             design to meet the dynamic needs of the property market.
                         </p>
@@ -665,7 +694,7 @@
                         <img class="mb-5 w-11" src="assets/images/home/health-care-icon.svg">
                         <h5 class="text-4xl font-semibold text-secondary font-teko mb-5 leading-tight">Health Care</h5>
                         <p class="text-base leading-5 text-secondary">
-                            Empower educational institutions with MEP solutions designed for the modern learning
+                            Empower educational institutions with solutions designed for the modern learning
                             environment. We
                             provide sustainable, efficient systems to support schools and universities, creating optimal
                             conditions for students and staff.
@@ -675,7 +704,7 @@
                         <img class="mb-5 w-11" src="assets/images/home/hospitality-icon.svg">
                         <h5 class="text-4xl font-semibold text-secondary font-teko mb-5 leading-tight">Hospitality</h5>
                         <p class="text-base leading-5 text-secondary">
-                            Tailored MEP solutions for the hospitality industry, enhancing guest experiences through
+                            Tailored solutions for the hospitality industry, enhancing guest experiences through
                             cutting-edge technology and energy-efficient design. Elevate your hotel or resort with our
                             innovative services.
                         </p>
@@ -952,19 +981,19 @@
                         <h3 class="font-teko text-2xl font-medium">Quick Links</h3>
                         <ul class="flex flex-col items-start gap-4 mt-6 md:mt-10">
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300  font-rubik">Home</a>
+                                <a href="#inquire" class="hover:text-red-600 duration-300  font-rubik">Home</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300  font-rubik">About</a>
+                                <a href="#inquire" class="hover:text-red-600 duration-300  font-rubik">About</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300  font-rubik">Projects</a>
+                                <a href="#inquire" class="hover:text-red-600 duration-300  font-rubik">Projects</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300  font-rubik">Client</a>
+                                <a href="#inquire" class="hover:text-red-600 duration-300  font-rubik">Client</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300  font-rubik">Company</a>
+                                <a href="#inquire" class="hover:text-red-600 duration-300  font-rubik">Company</a>
                             </li>
                         </ul>
                     </div>
@@ -974,22 +1003,22 @@
                         <h3 class="font-teko text-2xl font-medium">Services</h3>
                         <ul class="flex flex-col items-start gap-4 mt-6 md:mt-10">
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300 font-rubik">Electrical
+                                <a href="#inquire" class="hover:text-red-600 duration-300 font-rubik">Electrical
                                     Services</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300 font-rubik">Mechanical
+                                <a href="#inquire" class="hover:text-red-600 duration-300 font-rubik">Mechanical
                                     Services</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300 font-rubik">Plumbing
+                                <a href="#inquire" class="hover:text-red-600 duration-300 font-rubik">Plumbing
                                     Services</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300 font-rubik">HVAC Services</a>
+                                <a href="#inquire" class="hover:text-red-600 duration-300 font-rubik">HVAC Services</a>
                             </li>
                             <li>
-                                <a href="#inquire" class="hover:text-primary duration-300 font-rubik">Additional
+                                <a href="#inquire" class="hover:text-red-600 duration-300 font-rubik">Additional
                                     Services</a>
                             </li>
                         </ul>
@@ -1025,11 +1054,11 @@
                                 </div>
                             </div>
                             <div class="flex space-x-4">
-                                <a class="hover:text-primary duration-500" href="#inquire"><i
+                                <a class="hover:text-red-600 duration-500" href="#inquire"><i
                                         class="fab fa-facebook text-2xl"></i></a>
-                                <a class="hover:text-primary duration-500" href="#inquire"><i
+                                <a class="hover:text-red-600 duration-500" href="#inquire"><i
                                         class="fab fa-instagram text-2xl"></i></a>
-                                <a class="hover:text-primary duration-500" href="#inquire"><i
+                                <a class="hover:text-red-600 duration-500" href="#inquire"><i
                                         class="fab fa-linkedin text-2xl"></i></a>
                             </div>
                         </div>
@@ -1042,12 +1071,12 @@
                 <div class="flex flex-col md:flex-row justify-between items-center  gap-4 mt-8">
                     <div class="flex justify-start flex-wrap gap-5">
                         <!-- <a href="#inquire"
-                            class="font-rubik text-base hover:text-primary duration-300 hover:underline">Quality
+                            class="font-rubik text-base hover:text-red-600 duration-300 hover:underline">Quality
                             Policy</a>
                         <a href="#inquire"
-                            class="font-rubik text-base hover:text-primary duration-300 hover:underline">Our Mission</a>
+                            class="font-rubik text-base hover:text-red-600 duration-300 hover:underline">Our Mission</a>
                         <a href="#inquire"
-                            class="font-rubik text-base hover:text-primary duration-300 hover:underline">Our Vision</a> -->
+                            class="font-rubik text-base hover:text-red-600 duration-300 hover:underline">Our Vision</a> -->
                     </div>
                     <div>
                         <p class="font-rubik text-base tracking-wide">All Rights Reserved © <span
@@ -1063,30 +1092,17 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="assets/js/home.js"></script>
 
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
+    <!-- <script src="/src/assets/js/custom.js"></script> -->
 
-    <!-- <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script> -->
-     <script src="/src/assets/js/flowbite/flowbite.min.js"></script>
-    
-     <!-- <script>
-        document.addEventListener('DOMContentLoaded', function () {
-          // Get all dropdown buttons with `data-dropdown-toggle`
-          const dropdownToggles = document.querySelectorAll('[data-dropdown-toggle]');
-      
-          dropdownToggles.forEach((toggleBtn) => {
-            const dropdownId = toggleBtn.getAttribute('data-dropdown-toggle');
-            const dropdownEl = document.getElementById(dropdownId);
-      
-            if (dropdownEl) {
-              new Dropdown(dropdownEl, toggleBtn, {
-                placement: 'bottom',
-                triggerType: toggleBtn.getAttribute('data-dropdown-trigger') || 'click'
-              });
-            }
-          });
-        });
-      </script> -->
-      
+    <script src="/src/assets/js/alpine/cdn.min.js"></script>
+
+    <script src="/src/assets/js/flowbite/flowbite.min.js"></script>
+    <!-- <script src="/src/assets/js/alpine/cdn.js"></script> -->
+    <!-- <script src="/src/assets/js/mateialtailwind/material-tailwind.umd.min.js"></script> -->
+
+
+
 
 </body>
 
