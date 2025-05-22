@@ -13,7 +13,8 @@ menubutton.addEventListener('click', () => {
 const dropdowns = [
     { button: '#services', dropdown: '#services-dropdown' },
     { button: '#projects', dropdown: '#projects-dropdown' },
-    { button: '#company', dropdown: '#company-dropdown' }
+    { button: '#company', dropdown: '#company-dropdown' },
+    { button: '#products', dropdown: '#products-dropdown' }
 ];
 
 dropdowns.forEach(({ button, dropdown }) => {
