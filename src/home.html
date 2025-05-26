@@ -13,15 +13,6 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
-    <!-- Include Flowbite JS -->
-    <!-- <script src="https://unpkg.com/flowbite@1.6.5/dist/flowbite.js"></script> -->
-
-    <!-- <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script> -->
-
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-
     <!-- For Home slider -->
     <link href="./output.css" rel="stylesheet">
     <title>Home</title>
@@ -354,41 +345,29 @@
             autoplayIntervalTime: 4000,
             slides: [                
                 {
-                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',
+                    imgSrc: 'assets/images/carousel/banner1.png',
                     imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',  
-                    title: 'Frontend developers',
-                    description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',           
+                    title: 'Smart Living with Next Generation Solar Energy System',
+                    description: 'Intelligent Solar & Lithium Battery Energy Storage with 24/7 Cloud Connected Support',           
                 },                
                 {                    
-                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-2.webp',                    
+                    imgSrc: 'assets/images/carousel/banner2.jpg',                    
                     imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',  
-                    title: 'Backend developers',
-                    description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',            
+                    title: 'Smart Solar Solution for Your Business',
+                    description: 'Improve Business Productivity and Performance with No Power Outages & Lowest per unit Electricity Cost!',            
                 },                
                 {                    
-                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-3.webp',                    
+                    imgSrc: 'assets/images/carousel/banner3.jpg',                    
                     imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',    
-                    title: 'Fullstack developers',
-                    description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',       
+                    title: 'Smart Solar Solution for Commercial & Industrial Sites',
+                    description: 'Get Energy Control of Your Business with Enhanced Operational Efficiency.',       
                 }, 
                 {
-                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-1.webp',
+                    imgSrc: 'assets/images/carousel/banner4.jpg',
                     imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',  
-                    title: 'MERN Stack developers',
-                    description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',           
-                },                
-                {                    
-                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-2.webp',                    
-                    imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',  
-                    title: 'Backend developers',
-                    description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',            
-                },                
-                {                    
-                    imgSrc: 'https://penguinui.s3.amazonaws.com/component-assets/carousel/default-slide-3.webp',                    
-                    imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',    
-                    title: 'Frontend developers',
-                    description: 'The architects of the digital world, constantly battling against their mortal enemy – browser compatibility.',       
-                },            
+                    title: 'Solar Solution for All Markets Across The Globe',
+                    description: 'Excellence Engineering solves the problem of load-shedding along with the benefits of solar solutions that homes and businesses enjoy in the West.',           
+                },                          
             ],            
             currentSlideIndex: 1,
             isPaused: false,
@@ -423,7 +402,25 @@
                 this.autoplay()
             },    
         }" x-init="autoplay" class="relative w-full overflow-hidden">
+                <!-- previous button -->
+                <button type="button"
+                    class=" absolute left-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 "
+                    aria-label="previous slide" x-on:click="previous()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+                        stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
 
+                <!-- next button -->
+                <button type="button"
+                    class="absolute right-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 dark:bg-surface-dark/40 dark:text-on-surface-dark dark:hover:bg-surface-dark/60 dark:focus-visible:outline-primary-dark"
+                    aria-label="next slide" x-on:click="next()">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
+                        stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
                 <!-- slides -->
                 <!-- Change min-h-[50svh] to your preferred height size -->
                 <div class="relative min-h-[90svh] w-full">
@@ -453,7 +450,7 @@
                 <div class="absolute rounded-sm bottom-3 md:bottom-5 left-1/2 z- 20 flex -translate-x-1/2 gap-4 md:gap-3 px-1.5 py-1 md:px-2"
                     role="group" aria-label="slides">
                     <template x-for="(slide, index) in slides">
-                        <button class="size-2 rounded-full transition"
+                        <button class="size-4 rounded-full transition"
                             x-on:click="(currentSlideIndex = index + 1), setAutoplayInterval(autoplayIntervalTime)"
                             x-bind:class="[currentSlideIndex === index + 1 ? 'bg-neutral-300' : 'bg-neutral-300/50']"
                             x-bind:aria-label="'slide ' + (index + 1)"></button>
@@ -579,8 +576,9 @@
                     <!-- card2 -->
                     <div
                         class="flex flex-col items-center gap-1 rou nded-xl bg-[url('assets/imag es/home/bg-why-choose.svg')] bg-cover bg-center sha dow-sm  p-4 hover:sha dow-lg duration-500">
-                        <div class="flex justify-center"> <img src="assets/images/home/expertise.png"
-                                alt="proven-experties" class="w-20 h-2w-20 mb-4 self-center"></div>
+                        <div class="flex justify-center">
+                            <i class="fa-thin fa-head-side-gear text-8xl text-[#e07d08] p-2"></i>
+                        </div>
                         <h2 class="text-2xl px-2 font-extrabold font-teko flex justify-center">Proven Expertise </h2>
                         <p class="text-secondary text-sm mb-8 font-rubik text-center">Years of experience across
                             multiple industries.</p>
@@ -589,8 +587,7 @@
                     <!-- card3 -->
                     <div
                         class="flex flex-col items-center gap-1 roun ded-xl bg-[url('assets/imag es/home/bg-why-choose.svg')] bg-cover bg-center shad ow-sm  p-4 hover:sha dow-lg duration-500">
-                        <img src="assets/images/home/solution.png" alt="proven-experties comprehansive-solution"
-                            class="w-20 h-20 mb-4 self-center">
+                        <i class="fa-thin fa-lightbulb-gear text-8xl text-[#e07d08] p-2"></i>
                         <h2 class="text-2xl px-2 font-extrabold font-teko flex justify-center">Effective Solutions </h2>
                         <p class="text-secondary text-sm mb-8 font-rubik text-center">Tailored solutions to meet your
                             specific needs.</p>
@@ -600,8 +597,7 @@
                     <!-- card5 -->
                     <div
                         class="flex flex-col items-center gap-1 rounded-xl bg-[url('assets/imag es/home/bg-why-choose.svg')] bg-cover bg-center shad ow-sm  p-4 hover:sha dow-lg duration-500">
-                        <img src="assets/images/home/client-c.png" alt="client-centric"
-                            class="w-20 h-20 mb-4 self-center">
+                        <i class="fa-thin fa-users-rays text-8xl text-[#e07d08] p-2"></i>
                         <h2 class="text-2xl px-2 font-extrabold font-teko">Client-Centric Approach </h2>
                         <p class="text-secondary text-sm mb-8 font-rubik text-center">From concept to completion, we've
                             got you covered.</p>
@@ -610,8 +606,8 @@
                     <!-- card6 -->
                     <div
                         class="flex flex-col items-center gap-1 rounded-xl bg-[url('assets/im ages/home/bg-why-choose.svg')] bg-cover bg-center sha dow-sm  p-4 hover:sh adow-lg duration-500">
-                        <div class="flex justify-center"> <img src="assets/images/home/commitment.png"
-                                alt="commitment-quolity" class="w-20 h-20 mb-4 self-center">
+                        <div class="flex justify-center">
+                            <i class="fa-thin fa-handshake text-8xl text-[#e07d08] p-2"></i>
                         </div>
                         <h2 class="text-2xl px-2 font-extrabold font-teko">Commitment to Quality</h2>
                         <p class="text-secondary text-sm mb-8 font-rubik text-center">Delivering results that stand the
@@ -927,15 +923,57 @@
 
                 </div>
 
-                 <div class="flex justify-center items-center w-full py-8">
-                         <a href="#inquire"
+                <div class="flex justify-center items-center w-full py-8">
+                    <a href="#inquire"
                         class="inline-block bg-primary duration-300 text-white text-lg  px-2 xl:px-6 py-2 rounded-md hover:bg-red-500">
                         See More <i class="fas fa-angle-double-right animate-wiggle"></i>
                     </a>
-                    </div>
+                </div>
 
             </div>
         </section>
+
+
+
+
+
+        <section class="bg-gray-50 bg-[url('assets/images/dotted-bg.svg')] bg-no-repeat">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-8 lg:py-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8  place-items-center">
+                    <!-- card1 -->
+
+                    <!-- card2 -->
+                    <div class="flex flex-col items-center gap-1">
+                        <div class="flex justify-center">
+                            <i class="fa-regular fa-solar-panel text-6xl py-4"></i>
+                        </div>
+                        <h2 class="text-4xl px-2 font-extrabold font-teko flex justify-center">Systems Installed
+                        </h2>
+                        <p class="text-4xl mb-8 font-rubik text-center">50+</p>
+                    </div>
+
+                    <!-- card3 -->
+                    <div class="flex flex-col items-center gap-1">
+                        <i class="fa-solid fa-bolt text-6xl py-4"></i>
+                        <h2 class="text-3xl px-2 font-extrabold font-teko flex justify-center">Total Megawatts</h2>
+                        <p class="text-4xl mb-8 font-rubik text-center">200+</p>
+                    </div>
+
+
+                    <!-- card6 -->
+                    <div class="flex flex-col items-center gap-1">
+                        <div class="flex justify-center"><i class="fa-solid fa-users text-6xl py-4"></i>
+                        </div>
+                        <h2 class="text-3xl px-2 font-extrabold font-teko">Satisfied Customers</h2>
+                        <p class="text-4xl mb-8 font-rubik text-center">25+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
 
 
 
@@ -1265,7 +1303,7 @@
 
     <script src="/src/assets/js/alpine/cdn.min.js"></script>
 
-    <script src="/src/assets/js/flowbite/flowbite.min.js"></script>
+    <!-- <script src="/src/assets/js/flowbite/flowbite.min.js"></script> -->
     <!-- <script src="/src/assets/js/alpine/cdn.js"></script> -->
     <!-- <script src="/src/assets/js/mateialtailwind/material-tailwind.umd.min.js"></script> -->
 
