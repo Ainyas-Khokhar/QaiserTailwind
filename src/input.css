@@ -164,7 +164,7 @@
 
 .nav-link:hover::after {
   width: 100%;
-  color: #E54750;
+  color: #155dfc;
 }
 
 
@@ -281,7 +281,7 @@ button.learn-more .circle {
   margin: 0;
   width: 3rem;
   height: 3rem;
-  background: #E54750;
+  background: #155dfc;
   border-radius: 1.625rem;
 }
 
