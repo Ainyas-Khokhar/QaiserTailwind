@@ -22,9 +22,9 @@
 <body>
     <main>
         <!-- HEADER -->
-        <header class="sticky top-0 z-20 w-full font-rubik">
+        <header class="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] font-rubik">
             <!-- Navbar Section -->
-            <nav class="bg-white border-b border-gray-100 shadow-md">
+            <nav class="bg-white  rounded-xl shadow-md">
                 <div class="container mx-auto px-4 lg:px-7 xl:px-10  p y-4 flex justify-between items-center ">
                     <!-- Logo -->
                     <div class="">
@@ -363,7 +363,7 @@
                     description: 'Get Energy Control of Your Business with Enhanced Operational Efficiency.',       
                 }, 
                 {
-                    imgSrc: 'assets/images/carousel/banner4.jpg',
+                    imgSrc: 'assets/images/carousel/solar3.jpg',
                     imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',  
                     title: 'Solar Solution for All Markets Across The Globe',
                     description: 'Excellence Engineering solves the problem of load-shedding along with the benefits of solar solutions that homes and businesses enjoy in the West.',           
@@ -404,7 +404,7 @@
         }" x-init="autoplay" class="relative w-full overflow-hidden">
                 <!-- previous button -->
                 <button type="button"
-                    class=" absolute left-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 "
+                    class=" absolute left-5 top-1/2 z-10 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 "
                     aria-label="previous slide" x-on:click="previous()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
                         stroke-width="3" class="size-5 md:size-6 pr-0.5" aria-hidden="true">
@@ -414,7 +414,7 @@
 
                 <!-- next button -->
                 <button type="button"
-                    class="absolute right-5 top-1/2 z-20 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 dark:bg-surface-dark/40 dark:text-on-surface-dark dark:hover:bg-surface-dark/60 dark:focus-visible:outline-primary-dark"
+                    class="absolute right-5 top-1/2 z-10 flex rounded-full -translate-y-1/2 items-center justify-center bg-surface/40 p-2 text-on-surface transition hover:bg-surface/60 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary active:outline-offset-0 dark:bg-surface-dark/40 dark:text-on-surface-dark dark:hover:bg-surface-dark/60 dark:focus-visible:outline-primary-dark"
                     aria-label="next slide" x-on:click="next()">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="currentColor" fill="none"
                         stroke-width="3" class="size-5 md:size-6 pl-0.5" aria-hidden="true">
@@ -423,7 +423,7 @@
                 </button>
                 <!-- slides -->
                 <!-- Change min-h-[50svh] to your preferred height size -->
-                <div class="relative min-h-[90svh] w-full">
+                <div class="relative min-h-[100svh] w-full">
                     <template x-for="(slide, index) in slides">
                         <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0"
                             x-transition.opacity.duration.1000ms>
@@ -482,7 +482,8 @@
                             class="w-24 h-24 flex items-center justify-center bg-gradient-to-b from-blue-200  to-orange-200 rounded-md">
                             <i class="fas fa-cogs text-6xl"></i>
                         </div>
-                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">Design Services
+                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">
+                            Design Services
                         </h5>
                         <p class="text-sm text-[#7e8882] leading-[22px]">
                             Innovative solutions to elevate projects, focusing on sustainability and
@@ -497,10 +498,12 @@
 
                     <div
                         class="bg-white p-6 hover:shadow-xl duration-500 bg-wh ite rounded-xl shadow-md flex flex-col items-start">
-                        <div class="w-24 h-24 flex items-center justify-center bg-gradient-to-b from-blue-200  to-orange-200 rounded-md">
+                        <div
+                            class="w-24 h-24 flex items-center justify-center bg-gradient-to-b from-blue-200  to-orange-200 rounded-md">
                             <i class="fas fa-drafting-compass text-6xl"></i>
                         </div>
-                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">System Study
+                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">
+                            System Study
                         </h5>
                         <p class="text-sm text-[#7e8882] leading-[22px]">
                             Empower educational institutions with MEP solutions designed for the modern learning
@@ -514,10 +517,12 @@
 
                     <div
                         class="bg-white p-6 hover:shadow-xl duration-500 bg-wh ite rounded-xl shadow-md flex flex-col items-start">
-                        <div class="w-24 h-24 flex items-center justify-center bg-gradient-to-b from-blue-200  to-orange-200 rounded-md">
+                        <div
+                            class="w-24 h-24 flex items-center justify-center bg-gradient-to-b from-blue-200  to-orange-200 rounded-md">
                             <i class="fas fa-sitemap text-6xl"></i>
                         </div>
-                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">Relay Testing
+                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">Relay
+                            Testing
                         </h5>
                         <p class="text-sm text-[#7e8882] leading-[22px]">
                             Empower educational institutions with solutions designed for the modern learning
@@ -531,10 +536,12 @@
 
                     <div
                         class="bg-white p-6 hover:shadow-xl duration-500 bg-wh ite rounded-xl shadow-md flex flex-col items-start">
-                        <div class="w-24 h-24 flex items-center justify-center bg-gradient-to-b from-blue-200  to-orange-200 rounded-md">
+                        <div
+                            class="w-24 h-24 flex items-center justify-center bg-gradient-to-b from-blue-200  to-orange-200 rounded-md">
                             <i class="fas fa-solar-panel text-6xl"></i>
                         </div>
-                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">Final Acceptance
+                        <h5 class="text-2xl md:text-4xl font-semibold text-secondary font-teko mt-5 leading-tight">Final
+                            Acceptance
                             Test
                         </h5>
                         <p class="text-sm text-[#7e8882] leading-[22px]">
@@ -554,41 +561,45 @@
         </section>
 
 
-         <!-- section6 -->
+        <!-- section6 -->
         <section class="bg-gradient-to-b from-white to-blue-200">
-             
+
             <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-16 lg:py-16">
                 <div class=" mb-12 text-center py-4">
                     <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-teko">Brands trusted globally</h2>
                 </div>
                 <!-- Section Title -->
-               
+
                 <!-- Section Title -->
 
+
+
+
                 <div class="flex flex-wrap justify-center items-center gap-6 sm:gap-10 rounded-lg">
-    <!-- Each logo wrapper -->
-    <div class="w-24 flex justify-center">
-        <img src="/src/assets/images/brands/pheonix.png" class="h-8 w-auto" alt="">
-    </div>
-    <div class="w-24 flex justify-center">
-        <img src="/src/assets/images/brands/abb-logo.svg" class="h-8 w-auto" alt="">
-    </div>
-    <div class="w-24 flex justify-center">
-        <img src="/src/assets/images/brands/SE_Logo_White.png" class="h-8 w-auto" alt="">
-    </div>
-    <div class="w-24 flex justify-center">
-        <img src="/src/assets/images/brands/pheonix.png" class="h-8 w-auto" alt="">
-    </div>
-    <div class="w-24 flex justify-center">
-        <img src="/src/assets/images/brands/abb-logo.svg" class="h-8 w-auto" alt="">
-    </div>
-    <div class="w-24 flex justify-center">
-        <img src="/src/assets/images/brands/SE_Logo_White.png" class="h-8 w-auto" alt="">
-    </div>
-    <div class="w-24 flex justify-center">
-        <img src="/src/assets/images/brands/pheonix.png" class="h-8 w-auto" alt="">
-    </div>
-</div>
+                    <!-- Each logo wrapper -->
+                    <div class="w-24 flex justify-center">
+                        <img src="/src/assets/images/brands/pheonix.png" class="h-8 w-auto" alt="">
+                    </div>
+                    <div class="w-24 flex justify-center">
+                        <img src="/src/assets/images/brands/abb-logo.svg" class="h-8 w-auto" alt="">
+                    </div>
+                    <div class="w-24 flex justify-center">
+                        <img src="/src/assets/images/brands/SE_Logo_White.png" class="h-8 w-auto" alt="">
+                    </div>
+                    <div class="w-24 flex justify-center">
+                        <img src="/src/assets/images/brands/pheonix.png" class="h-8 w-auto" alt="">
+                    </div>
+                    <div class="w-24 flex justify-center">
+                        <img src="/src/assets/images/brands/abb-logo.svg" class="h-8 w-auto" alt="">
+                    </div>
+                    <div class="w-24 flex justify-center">
+                        <img src="/src/assets/images/brands/SE_Logo_White.png" class="h-8 w-auto" alt="">
+                    </div>
+                    <div class="w-24 flex justify-center">
+                        <img src="/src/assets/images/brands/pheonix.png" class="h-8 w-auto" alt="">
+                    </div>
+
+                </div>
 
 
 
@@ -611,8 +622,7 @@
                 </div>
                 <!-- Section Title -->
 
-                <div
-                    class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8    rounded-lg">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8    rounded-lg">
                     <!-- card1 -->
 
                     <!-- card2 -->
@@ -662,6 +672,167 @@
 
             </div>
         </section>
+
+
+
+
+        <!-- SOLUTIONS -->
+        <section class="bg-gray-50">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-16 lg:py-32">
+                <!-- Section Title -->
+                <div class=" mb-12 text-center">
+                    <h2 class="text-3xl sm:text-4xl md:text-5xl font-bold font-teko">Solutions</h2>
+                    <p class="text-[#767c78] text-base mb-12 font-rubik max-w-6xl md:px-12 mt-4">
+                        We extend our expertise across various pivotal sectors including real estate,
+                        healthcare, education, and data centers. Our dedicated team crafts solutions that cater to the
+                        unique demands of each sector, fostering innovation and excellence at every step. Trust us to be
+                        your reliable partner, propelling growth and success in your industry.
+                    </p>
+                </div>
+
+
+
+
+                <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-12 lg:gri d-rows-2">
+
+
+                    <div class="col-span-12 md:col-span-6 lg:col-span-8">
+                        <div class="relative flex  flex-col overflow-hidden">
+                            <img src="/src/assets/images/solar8.jpg" alt="" class="h-64 rounded-lg w-full object-cover">
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-12 md:col-span-6 lg:col-span-4 rounded-lg bg-white shadow-md hover:shadow-lg duration-300">
+                        <div
+                            class="relative flex h-full flex-col overflow-hidden rounded-[calc(var(--radius-lg)+1px)] max-lg:rounded-t-[calc(2rem+1px)]">
+                            <div class="px-8 pt-8 sm:px-10 py-2">
+                                <p class="text-3xl font-medium  text-gray-950 font-teko max-lg:text-center">
+                                    EV Solutions</p>
+                                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                                    Power your electric journey with smart, sustainable energy. Our EV charging
+                                    solutions are designed to seamlessly integrate with your solar system,
+                                    allowing you to charge your electric vehicle using clean, renewable energy
+                                    right from your home or business.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div
+                        class="col-span-12 md:col-span- lg:col-span-6 rounded-lg bg-white shadow-md hover:shadow-lg duration-300 h-fit">
+                        <div class="grid grid-cols-12">
+                            <div class="col-span-6">
+                                <div class="px-8 pt-8 sm:px-9 py-2">
+                                    <p class="text-3xl font-medium  text-gray-950 font-teko max-lg:text-center">
+                                        Battery Management System</p>
+                                    <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                                        Our BMS solutions ensure optimal battery performance, safety, and longevity
+                                        through real-time monitoring and intelligent control.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-span-6">
+                                <img src="/src/assets/images/solar7.jpg" alt=""
+                                    class="h-full w-full object-cover rounded-r-lg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-12 md:col-span- lg:col-span-6 rounded-lg bg-white shadow-md hover:shadow-lg duration-300 h-fit">
+                        <div class="grid grid-cols-12">
+                            <div class="col-span-6">
+                                <img src="/src/assets/images/solar3.jpg" alt=""
+                                    class="h-full w-full object-cover rounded-l-lg">
+                            </div>
+                            <div class="col-span-6">
+                                <div class="px-8 pt-8 sm:px-9 py-2">
+                                    <p class="text-3xl font-medium  text-gray-950 font-teko max-lg:text-center">
+                                        Energy Management System</p>
+                                    <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                                        Our EMS solutions optimize energy usage, reduce costs, and enhance system
+                                        efficiency through smart monitoring and control.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div
+                        class="col-span-12 md:col-span-6 lg:col-span-4 rounded-lg bg-white shadow-md hover:shadow-lg duration-300">
+                        <div class="relative flex h-full flex-col overflow-hidden ">
+                            <div class="px-8 pt-8 sm:px-10 py-2">
+                                <p class="text-3xl font-medium  text-gray-950 font-teko max-lg:text-center">
+                                    Solar Systems</p>
+                                <p class="mt-2 max-w-lg text-sm/6 text-gray-600 max-lg:text-center">
+                                    Our solar system solutions provide clean, reliable, and cost-effective
+                                    energy for homes and businesses. Harness the power of the sun to reduce
+                                    electricity bills and minimize your carbon footprint.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="col-span-12 md:col-span-6 lg:col-span-8">
+                        <div class="relative flex  flex-col overflow-hidden">
+                            <img src="/src/assets/images/solar5.jpg" alt="" class="h-64 rounded-lg w-full object-cover">
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+
+
+            </div>
+        </section>
+
+
+
+        <section class="bg-white bg-[url('assets/images/dotted-bg.svg')] lg:bg-no-repeat">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-8 lg:py-6">
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8  place-items-center">
+                    <!-- card1 -->
+
+                    <!-- card2 -->
+                    <div class="flex flex-col items-center gap-1">
+                        <div class="flex justify-center">
+                            <i class="fa-regular fa-solar-panel text-6xl py-4"></i>
+                        </div>
+                        <h2 class="text-3xl px-2 font-extrabold font-teko flex justify-center">Systems Installed
+                        </h2>
+                        <p class="text-4xl mb-8 font-rubik text-center">50+</p>
+                    </div>
+
+                    <!-- card3 -->
+                    <div class="flex flex-col items-center gap-1">
+                        <i class="fa-solid fa-bolt text-6xl py-4"></i>
+                        <h2 class="text-3xl px-2 font-extrabold font-teko flex justify-center">Total Megawatts</h2>
+                        <p class="text-4xl mb-8 font-rubik text-center">200+</p>
+                    </div>
+
+
+                    <!-- card6 -->
+                    <div class="flex flex-col items-center gap-1">
+                        <div class="flex justify-center"><i class="fa-solid fa-users text-6xl py-4"></i>
+                        </div>
+                        <h2 class="text-3xl px-2 font-extrabold font-teko">Satisfied Customers</h2>
+                        <p class="text-4xl mb-8 font-rubik text-center">25+
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
 
         <!-- TETIMONIAL SLIDER -->
         <style>
@@ -903,10 +1074,10 @@
 
                     <!-- Responsive Hover and Always-Reveal on Mobile -->
                     <div
-                        class="relative group cursor-pointer overflow-hidden duration-500 w-full h-full bg-gradient-to-b from-blue-100 text-white p-5 rounded-lg shadow-md md:shadow-md md:hover:shadow-lg">
+                        class="relative group cursor-pointer overflow-hidden duration-500 w-full h-fit bg-gradient-to-b from-blue-100 text-white p-5 rounded-lg shadow-md md:shadow-md md:hover:shadow-lg">
                         <div class="sm:p-1">
                             <div class="md:group-hover:scale-110 w-full h-full duration-500">
-                                <img src="/src/assets/images/projects/educational.svg" alt="" class="object-center ">
+                                <img src="/src/assets/images/solar5.jpg" alt="" class="object-center ">
                             </div>
 
                             <div
@@ -923,10 +1094,10 @@
                     </div>
                     <!-- Responsive Hover and Always-Reveal on Mobile -->
                     <div
-                        class="relative group cursor-pointer overflow-hidden duration-500 w-full h-full bg-gradient-to-b from-blue-100 text-white p-5 rounded-lg shadow-md md:shadow-md md:hover:shadow-lg">
+                        class="relative group cursor-pointer overflow-hidden duration-500 w-full h-fit bg-gradient-to-b from-blue-100 text-white p-5 rounded-lg shadow-md md:shadow-md md:hover:shadow-lg">
                         <div class="sm:p-1">
                             <div class="md:group-hover:scale-110 w-full h-full duration-500">
-                                <img src="/src/assets/images/projects/educational.svg" alt="" class="object-center ">
+                                <img src="/src/assets/images/solar3.jpg" alt="" class="object-center ">
                             </div>
 
                             <div
@@ -943,10 +1114,10 @@
                     </div>
                     <!-- Responsive Hover and Always-Reveal on Mobile -->
                     <div
-                        class="relative group cursor-pointer overflow-hidden duration-500 w-full h-full bg-gradient-to-b from-blue-100 text-white p-5 rounded-lg shadow-md md:shadow-md md:hover:shadow-lg">
+                        class="relative group cursor-pointer overflow-hidden duration-500 w-full h-fit bg-gradient-to-b from-blue-100 text-white p-5 rounded-lg shadow-md md:shadow-md md:hover:shadow-lg">
                         <div class="sm:p-1">
                             <div class="md:group-hover:scale-110 w-full h-full duration-500">
-                                <img src="/src/assets/images/projects/educational.svg" alt="" class="object-center ">
+                                <img src="/src/assets/images/solar-1.jpg" alt="" class="object-center ">
                             </div>
 
                             <div
@@ -975,45 +1146,6 @@
             </div>
         </section>
 
-
-
-
-
-        <section class="bg-gray-50 bg-[url('assets/images/dotted-bg.svg')] lg:bg-no-repeat">
-            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-8 lg:py-6">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8  place-items-center">
-                    <!-- card1 -->
-
-                    <!-- card2 -->
-                    <div class="flex flex-col items-center gap-1">
-                        <div class="flex justify-center">
-                            <i class="fa-regular fa-solar-panel text-6xl py-4"></i>
-                        </div>
-                        <h2 class="text-3xl px-2 font-extrabold font-teko flex justify-center">Systems Installed
-                        </h2>
-                        <p class="text-4xl mb-8 font-rubik text-center">50+</p>
-                    </div>
-
-                    <!-- card3 -->
-                    <div class="flex flex-col items-center gap-1">
-                        <i class="fa-solid fa-bolt text-6xl py-4"></i>
-                        <h2 class="text-3xl px-2 font-extrabold font-teko flex justify-center">Total Megawatts</h2>
-                        <p class="text-4xl mb-8 font-rubik text-center">200+</p>
-                    </div>
-
-
-                    <!-- card6 -->
-                    <div class="flex flex-col items-center gap-1">
-                        <div class="flex justify-center"><i class="fa-solid fa-users text-6xl py-4"></i>
-                        </div>
-                        <h2 class="text-3xl px-2 font-extrabold font-teko">Satisfied Customers</h2>
-                        <p class="text-4xl mb-8 font-rubik text-center">25+
-                        </p>
-                    </div>
-
-                </div>
-            </div>
-        </section>
 
 
 
