@@ -13,19 +13,21 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+
     <!-- For Home slider -->
     <link href="./output.css" rel="stylesheet">
     <title>Home</title>
 </head>
 
 
-<body>
+<body class="font-rubik">
     <main>
         <!-- HEADER -->
-         <!-- HEADER -->
         <header class="fixed top-5 left-1/2 -translate-x-1/2 z-50 w-[95%] font-rubik">
             <!-- Navbar Section -->
-            <nav class="bg-white  rounded-xl shadow-md">
+            <nav class="bg-[#FFFFFFF2]  rounded-xl shadow-md">
                 <div class="container mx-auto px-4 lg:px-7 xl:px-10  p y-4 flex justify-between items-center ">
                     <!-- Logo -->
                     <div class="">
@@ -340,312 +342,236 @@
         </header>
         <!-- HERO -->
 
-        <div class="">
-            <div x-data="{            
-            // Sets the time between each slides in milliseconds
-            autoplayIntervalTime: 5000,
-            slides: [                
-                {
-                    imgSrc: 'assets/images/carousel/banner1.png',
-                    imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',  
-                    title: '',
-                    description: '',           
-                },                
-                {                    
-                    imgSrc: 'assets/images/carousel/banner2.jpg',                    
-                    imgAlt: 'Vibrant abstract painting with swirling red, yellow, and pink hues on a canvas.',  
-                    title: '',
-                    description: '',            
-                },                
-                {                    
-                    imgSrc: 'assets/images/carousel/banner3.jpg',                    
-                    imgAlt: 'Vibrant abstract painting with swirling blue and purple hues on a canvas.',    
-                    title: '',
-                    description: '',       
-                }, 
-                {
-                    imgSrc: 'assets/images/carousel/banner4.jpg',
-                    imgAlt: 'Vibrant abstract painting with swirling blue and light pink hues on a canvas.',  
-                    title: '',
-                    description: '',           
-                },                          
-            ],            
-            currentSlideIndex: 1,
-            isPaused: false,
-            autoplayInterval: null,
-            previous() {                
-                if (this.currentSlideIndex > 1) {                    
-                    this.currentSlideIndex = this.currentSlideIndex - 1                
-                } else {   
-                    // If it's the first slide, go to the last slide           
-                    this.currentSlideIndex = this.slides.length                
-                }            
-            },            
-            next() {                
-                if (this.currentSlideIndex < this.slides.length) {                    
-                    this.currentSlideIndex = this.currentSlideIndex + 1                
-                } else {                 
-                    // If it's the last slide, go to the first slide    
-                    this.currentSlideIndex = 1                
-                }            
-            },    
-            autoplay() {
-                this.autoplayInterval = setInterval(() => {
-                    if (! this.isPaused) {
-                        this.next()
-                    }
-                }, this.autoplayIntervalTime)
-            },
-            // Updates interval time   
-            setAutoplayInterval(newIntervalTime) {
-                clearInterval(this.autoplayInterval)
-                this.autoplayIntervalTime = newIntervalTime
-                this.autoplay()
-            },    
-        }" x-init="autoplay" class="relative w-full overflow-hidden">
-
-                <!-- slides -->
-                <!-- Change min-h-[50svh] to your preferred height size -->
-                <div class="relative min-h-[45svh] w-full">
-                    <template x-for="(slide, index) in slides">
-                        <div x-cloak x-show="currentSlideIndex == index + 1" class="absolute inset-0"
-                            x-transition.opacity.duration.1000ms>
-
-                            <!-- Title and description -->
-                            <div
-                                class="font-rubik text-white lg:px-16 lg:py-14 absolute inset-0 z-10 flex flex-col items-center justify-center sm:justify-center lg:justify-center gap-2 bg-linear-to-t from-surface-dark/85 to-transparent px-16 py-12 text-center">
-                                <h1 class="w-full lg:w-[80%] text-balance text-4xl md:text-5xl font-bold uppercase text-on-surface-dark-strong"
-                                    x-text="" x-bind:aria-describedby="'slide' + (index + 1) + 'Description'"> Solutions / Solar Panels
-                                </h1>
-                                <!-- <p class="lg:w-1/2 w-full text-pretty text-lg md:text-xl text-on-surface-dark"
-                                    x-text="slide.description" x-bind:id="'slide' + (index + 1) + 'Description'">
-                                </p> -->
-                            </div>
-
-                            <img class="absolute w-full h-full inset-0 object-cover text-on-surface dark:text-on-surface-dark"
-                                x-bind:src="slide.imgSrc" x-bind:alt="slide.imgAlt" />
-                        </div>
-                    </template>
+        <section class="py-20 bg-[url('assets/images/solar5.jpg')] bg-cover ">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10">
+                <div class="py-8 text-center mx-auto px-4 lg:px-7 xl:px-10 lg:py-8">
+                    <h2 class="text-4xl md:text-5xl font-bold text-white mb-4 font-teko">
+                        Solutions / Storage Solution
+                    </h2>
                 </div>
-
             </div>
-        </div>
-
+        </section>
 
         <!-- section2 -->
         <section class="bg-gray-100">
-            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-2 bg-gray-100 mt-8 ">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-4 bg-gray-100">
                 <div
                     class="flex justify-start gap-8 xl:gap-20 2xl:gap-32 px-3 text-center text-nowrap w-auto overflow-x-scroll no-scrollbar">
-                    <a href="#inquire" class="service-btn text-lg font-rubik text-primary hover:text-blue-700 nav-link" data-target="all">All</a>
-                    <a href="#Electrical-Services"
-                        class="service-btn text-lg font-rubik hover:text-blue-700 duration-300 nav-link"
+                    <a href="#inquire" class="service-btn text-lg font-rubik hover:text-blue-500"
+                        data-target="all">All</a>
+                    <a href="#get-service"
+                        class="service-btn text-lg font-rubik hover:text-blue-500 hover:underline duration-300"
                         data-target="electrical">Electrical Services</a>
                     <a href="#Mechanical-Services"
-                        class="service-btn text-lg font-rubik hover:text-blue-700 duration-300 nav-link"
+                        class="service-btn text-lg font-rubik hover:text-blue-500 hover:underline duration-300"
                         data-target="mechanical">Mechanical Services</a>
                     <a href="#Plumbing-Services"
-                        class="service-btn text-lg font-rubik hover:text-blue-700 duration-300 nav-link"
+                        class="service-btn text-lg font-rubik hover:text-blue-500 hover:underline duration-300"
                         data-target="plumbing">Plumbing Services</a>
                     <a href="#HVAC-Services"
-                        class="service-btn text-lg font-rubik hover:text-blue-700 duration-300 nav-link"
+                        class="service-btn text-lg font-rubik hover:text-blue-500 hover:underline duration-300"
                         data-target="hvac">HVAC Services</a>
                     <a href="#Additional-Services"
-                        class="service-btn text-lg font-rubik hover:text-blue-700 duration-300 nav-link"
+                        class="service-btn text-lg font-rubik hover:text-blue-500 hover:underline duration-300"
                         data-target="additional">Additional Services</a>
                 </div>
             </div>
         </section>
 
 
-          <!-- section3 -->
-        <section class="bg-white">
-            <div id="Electrical-Services"
-                class="container mx-auto px-4 lg:px-7 xl:px-10 flex flex-col-reverse lg:flex-row justify-between py-16 lg:py-32 gap-8">
 
-                <!-- Left Section: Text Content -->
-                <div class="flex flex-col items-start gap-5 lg:max-w-lg xl:max-w-2xl  2xl:max-w-4xl">
-                    <h1 class="text-4xl lg:text-5xl font-bold font-teko leading-tight">
-                        Solar Panels
-                    </h1>
-                    <p class="text-secondary text-base font-rubik leading-relaxed">
-                        At MEPCE, our electrical solutions are built upon years of industry expertise and a passion for
-                        innovation. From complex electrical infrastructures to efficient lighting systems, our team
-                        ensures every project meets the highest standards of safety, reliability, and performance. Our
-                        approach is both comprehensive and adaptable, guaranteeing tailored solutions that cater to your
-                        specific needs while harnessing the latest in electrical advancements.
-                    </p>
-
-                </div>
-
-                <!-- Right Section: Image -->
-                <div class=" w-full flex justify-end">
-                    <img src="assets/images/services/electrical-services.svg" alt="electrical-services"
-                        class="w-full lg:max-w-lg rounded-xl">
-                </div>
-            </div>
-        </section>
-
-
-  
-
-
-        <section class="py-8 lg:py-16">
-            <div
-                class="container mx-auto px-4 lg:px-7 xl:px-10 py-8 lg:py-16 bg-gradient-to-b from-blue-100 rounded-lg">
-
-                <div class="flex flex-col lg:flex-row justify-between items-start">
-                    <!-- Contact Form -->
-                    <div class="bg-white rounded-xl border shadow-lg p-8 w-full lg:w-4/6">
-                        <h2 class="text-4xl font-bold mb-6 font-teko">Let's Talk</h2>
-
-
-                        <form>
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-
-                                <div class="input-container">
-                                    <input placeholder="" class="input-field" type="text">
-                                    <label for="input-field" class="input-label">Full Name <span
-                                            class="text-red-600">*</span></label>
-                                    <span class="input-highlight"></span>
+        <!-- Featured Solution -->
+        <section class="bg-gray-50">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-8 lg:py-16">
+                <div class="flex flex-col lg:flex-row items-center">
+                    <div class="lg:w-1/2 lg:pr-12 mb-12 lg:mb-0">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-6 font-teko">
+                            Storage Solution
+                        </h2>
+                        <p class="text-gray-600 mb-8">
+                            Our integrated solar and storage solution helps businesses reduce
+                            energy costs while ensuring reliable power supply. The system
+                            combines high-efficiency solar panels with advanced battery
+                            storage technology.
+                        </p>
+                        <div class="space-y-4 mb-8">
+                            <div class="flex items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="ri-check-line font-bold text-blue-500"></i>
                                 </div>
-
-                                <div class="input-container">
-                                    <input placeholder="" class="input-field" type="text">
-                                    <label for="input-field" class="input-label">Email <span
-                                            class="text-red-600">*</span></label>
-                                    <span class="input-highlight"></span>
-                                </div>
-
-                                <div class="input-container">
-                                    <input placeholder="" class="input-field" type="text">
-                                    <label for="input-field" class="input-label">Phone Number <span
-                                            class="text-red-600">*</span></label>
-                                    <span class="input-highlight"></span>
-                                </div>
-
-                                <div class="input-container">
-                                    <input placeholder="" class="input-field" type="text">
-                                    <label for="input-field" class="input-label">Service <span
-                                            class="text-red-600">*</span></label>
-                                    <span class="input-highlight"></span>
-                                </div>
-
-                                <!-- Description - Full Width -->
-                                <div class="input-container md:col-span-2">
-                                    <textarea class="input-field-description w-full"></textarea>
-                                    <label for="input-field" class="input-label-description">Description <span
-                                            class="text-red-600">*</span></label>
-                                    <span class="input-highlight-description"></span>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">
+                                        Peak Demand Management
+                                    </h4>
                                 </div>
                             </div>
-
-                            <button type="submit"
-                                class="w-full bg-blue-600 text-white rounded-lg py-3 font-semibold hover:bg-secondary transition duration-300 mt-4">
-                                Send Message<span><i class="fas fa-paper-plane px-1"></i></span></button>
-                        </form>
-
-                        <style>
-                            .input-container {
-                                position: relative;
-                                margin: 20px;
-                            }
-
-                            .input-field,
-                            .input-field-description {
-                                display: block;
-                                width: 100%;
-                                padding: 10px;
-                                font-size: 16px;
-                                border: none;
-                                border-bottom: 1px solid #ccc;
-                                outline: none;
-                                background-color: transparent;
-                                resize: none;
-                            }
-
-                            .input-label,
-                            .input-label-description {
-                                position: absolute;
-                                top: 0;
-                                left: 0;
-                                font-size: 16px;
-                                color: black;
-                                pointer-events: none;
-                                transition: all 0.3s ease;
-                            }
-
-                            .input-highlight,
-                            .input-highlight-description {
-                                position: absolute;
-                                bottom: 0;
-                                left: 0;
-                                height: 2px;
-                                width: 0;
-                                background-color: #007bff;
-                                transition: all 0.3s ease;
-                            }
-
-                            .input-field:focus+.input-label,
-                            .input-field-description:focus+.input-label-description {
-                                top: -20px;
-                                font-size: 12px;
-                                color: #007bff;
-                            }
-
-                            .input-field:focus+.input-label+.input-highlight,
-                            .input-field-description:focus+.input-label-description+.input-highlight-description {
-                                width: 100%;
-                            }
-                        </style>
-
-
-
-
-
+                            <div class="flex items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="ri-check-line font-bold text-blue-500"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">
+                                        Backup Power
+                                    </h4>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div
+                                    class="w-6 h-6 rounded-full bg-blue-100 flex items-center justify-center flex-shrink-0 mt-1">
+                                    <i class="ri-check-line font-bold text-blue-500"></i>
+                                </div>
+                                <div class="ml-4">
+                                    <h4 class="font-semibold text-gray-800 mb-1">
+                                        Energy Independence
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                    <!-- Contact Info -->
-                    <div class="lg:ml-14 mt-8 lg:mt-4 w-full lg:w-1/2 px-2">
-                        <h2 class="text-4xl font-bold mb-6 font-teko">Find Us</h2>
-                        <div class="text-secondary font-rubik">
-                            <p class="mb-4  bg-white  rounded-lg p-4 hover:shadow-md duration-500 shadow-sm">
-                                <span class="font-teko text-2xl">
-                                    <i class="fa-solid fa-location-dot  mr-1"></i> Our Location
-                                </span>
-                                <br>
-                                <span class="text-[#595959]"> Narowal, Punjab, Pakistan.</span>
-
-                            </p>
-                            <p class="mb-4 bg-white  rounded-lg p-4 hover:shadow-md duration-500 shadow-sm">
-                                <span class="font-teko text-2xl"><i class="fa-solid fa-phone mr-1"></i> Phone
-                                    Number</span><br>
-                                <span class="text-[#595959]">+92 3137994172 <br> +92 313 7994172</span>
-                            </p>
-                            <p class="mb-4 bg-white  rounded-lg p-4 hover:shadow-md duration-500 shadow-sm">
-                                <span class="font-teko text-2xl"><i class="fa-solid fa-envelope mr-1"></i>
-                                    Email</span><br>
-                                <span class="text-[#595959]">
-                                    akainyaskhokhar47.com <br> akainyaskhokhar47.com
-                                </span>
-                            </p>
+                    <div class="lg:w-1/2">
+                        <div id="energyChart" class="w-full h-80">
+                            <img src="/src/assets/images/services/services2.jpg"
+                                class="w-full h-full object-cover object-top rounded-xl" />
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <!-- Technical Specifications -->
+        <section class="">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-8 lg:py-16">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-800 mb-4 font-teko">
+                        Technical Specifications
+                    </h2>
+                    <p class="text-gray-600 max-w-2xl mx-auto">
+                        Our solutions are built with industry-leading components and
+                        advanced technology to ensure optimal performance and reliability.
+                    </p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- Spec 1 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                            <i class="ri-sun-line text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-teko font-semibold text-gray-800 mb-4">
+                            Solar System
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Panel Type:</span>
+                                <span>Monocrystalline</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Efficiency:</span>
+                                <span>21.5%</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Warranty:</span>
+                                <span>25 Years</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Degradation:</span>
+                                <span>0.5% per year</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Spec 2 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                            <i class="ri-battery-2-charge-line text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-teko font-semibold text-gray-800 mb-4">
+                            Storage System
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Battery Type:</span>
+                                <span>Lithium Iron</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Capacity:</span>
+                                <span>100-500 kWh</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Cycles:</span>
+                                <span>10,000+</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Warranty:</span>
+                                <span>10 Years</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- Spec 3 -->
+                    <div class="bg-white p-8 rounded-lg shadow-md">
+                        <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center mb-6">
+                            <i class="ri-dashboard-3-line text-blue-500 text-2xl"></i>
+                        </div>
+                        <h3 class="text-2xl font-teko font-semibold text-gray-800 mb-4">
+                            Control System
+                        </h3>
+                        <ul class="space-y-3 text-gray-600">
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Platform:</span>
+                                <span>Cloud-based</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Monitoring:</span>
+                                <span>Real-time</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Integration:</span>
+                                <span>API Available</span>
+                            </li>
+                            <li class="flex items-center">
+                                <span class="w-32 font-medium">Security:</span>
+                                <span>Enterprise-grade</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
 
+        <!-- CTA Section -->
+        <section class="">
+            <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-8 lg:py-16">
+                <div class="bg-blue-100 bg-opacity-50 rounded-2xl p-12">
+                    <div class="max-w-3xl mx-auto text-center">
+                        <h2 class="text-4xl font-bold text-gray-800 mb-6 font-teko">
+                            Ready to Transform Your Energy Infrastructure?
+                        </h2>
+                        <p class="text-gray-600 mb-8 ">
+                            Schedule a consultation with our experts to discuss your energy
+                            needs and discover the perfect solution for your business.
+                        </p>
+                        <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                            <button
+                                class="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 transition duration-300 whitespace-nowrap">
+                                Schedule Consultation
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
 
+
         <!-- footer -->
-        <footer class="bg-gradient-to-r from-blue-100 to-orange-100 text- white">
+        <footer class="bg-gray-800 text-white">
             <div class="container mx-auto px-4 lg:px-7 xl:px-10 py-12">
                 <div class="container mx-auto grid grid-cols-1 md:grid-cols-12 gap-8">
                     <!-- First column -->
                     <div class="col-span-9 md:col-span-6 lg:col-span-4">
                         <h3 class="font-teko text-2xl font-medium">About Excellence Engineering</h3>
                         <div class="mt-6 md:mt-10 mb-3">
-                            <p class="font-rubik text-base mb-10 text-[#656a67]">
+                            <p class="font-rubik text-base mb-10 text-[#bababa]">
                                 <!-- Added margin-bottom (mb-4) to create space -->
                                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aperiam, fuga.
                             </p>
@@ -746,16 +672,23 @@
                     </div>
                 </div>
                 <div class="flex flex-col md:flex-row justify-between items-center  gap-4 mt-8">
-                    <div class="flex justify-center flex-wrap gap-5">
-
-
-                        <ul class="icons">
-                            <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter icon"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in icon"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram icon"></i></a></li>
-                        </ul>
-
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="ri-facebook-fill text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="ri-twitter-fill text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="ri-linkedin-fill text-white"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center hover:bg-blue-500 transition duration-300">
+                            <i class="ri-instagram-fill text-white"></i>
+                        </a>
                     </div>
                     <div>
                         <p class="font-rubik text-base tracking-wide">All Rights Reserved © <span
@@ -769,38 +702,6 @@
 
     <script src="assets/js/navbar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
-    <script>
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            spaceBetween: 32,
-            loop: true,
-            centeredSlides: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-
-            },
-            autoplay: {
-                delay: 2500,
-                disableOnInteraction: false,
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 1,
-                    spaceBetween: 32,
-                },
-                768: {
-                    slidesPerView: 2,
-                    spaceBetween: 32,
-                },
-                1024: {
-                    slidesPerView: 3,
-                    spaceBetween: 32,
-                },
-            },
-        });
-    </script>
-
 
     <script src="assets/js/home.js"></script>
 
